@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(65,65,65);
+  color: rgb(65,65,65);
+  margin: 0%;
+}
+
+p,
+div {
+  padding: 2px;
+  margin: 0;
+}
+
+a {
+  color: rgb(65,65,65);
+  text-decoration: none;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+#grid .logo {
+  display: inline;
+  border: 0px solid;
+  margin: 0;
+  padding: 6px;
+  vertical-align: bottom;
+}
+
+#grid .title {
+  font-size: 2.2rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 0.9;
+  color: black;
+}
+
+.content {
+  width: 960px;
+  font-size: 2rem;
+}
+
+.showreel {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-top: 10px;
+}
+
+
+
+.endline {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  color: black;
+  margin-top: 10px;
+  border-top: 1px darkgray solid;
+}
+
+@media (max-width: 800px) {
+  #grid2 {
+    display: block;
+    border: 0;
+  }
+  #grid2 .list {
+    border-right: 0px;
+  }
+  #grid .title {
+    font-size: 2rem;
+  }
+  .content{
+    width: 480px;
+  }
+  .endline{
+    font-size: 0.8rem;
+  }
+}
